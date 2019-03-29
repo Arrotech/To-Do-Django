@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Learn</title>
+</head>
+<body>
+	<h1>Learn</h1>
+	<form method="POST" action="/">
+		{% csrf_token %}
+		<input id="new_item_id" name="Input" placeholder="Input Item">
+	</form>
+	<table id="list_table_id">
+		<tr>
+			<td>1: {{ new_to_do }}</td>
+		</tr>
+		
+	</table>
+</body>
+</html>
